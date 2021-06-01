@@ -1,0 +1,53 @@
+.ProjectList {
+  max-width: 100%;
+  grid-column: 1 / 2;
+}
+
+.ProjectList h3 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+.ProjectList h4 {
+    font-size: clamp(0.8rem, 2vw, 1rem); 
+}
+
+.ProjectList ul {
+  background-color: rgb(57, 62, 70);
+  border: 3px solid rgb(214, 90, 49);
+  -webkit-box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.32);
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.32);
+  border-radius: 5px 5px 5px 5px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  grid-gap: 15px;
+  padding: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 300px));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(220px, 300px);
+  overflow-x: scroll;
+  max-width: 80vw;
+}
+/* Fixes overflow non-padding issue on the right */
+.ProjectList ul:after {
+  content: "";
+  display: block;
+  width: 0.01px;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .ProjectList {
+    margin-bottom: 0px;
+  }
+  .ProjectList {
+    grid-column: 1 / 3;
+  }
+  .ProjectList ul {
+    max-width: 100%;
+  }
+  .ProjectList h3 {
+    text-align: start;
+  }
+}

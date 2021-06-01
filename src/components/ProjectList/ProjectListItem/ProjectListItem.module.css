@@ -1,0 +1,29 @@
+.ProjectListItem {
+  height: 100%;
+}
+
+.ProjectListItem li {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px 5px 5px 5px;
+  background-color: rgb(34, 40, 49);
+  transition: transform 500ms, color 500ms, box-shadow 500ms;
+  -webkit-transition: transform 500ms, background-color 500ms, box-shadow 500ms;
+  -moz-transition: transform 500ms, background-color 500ms, box-shadow 500ms;
+}
+
+.ProjectListItem li:hover,
+.ProjectListItem li:active {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  background-color: rgb(214, 90, 49);
+  -webkit-background-color: rgb(214, 90, 49);
+  box-shadow: 0px 2px 14px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 14px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 14px 2px rgba(0, 0, 0, 0.2);
+}

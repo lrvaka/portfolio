@@ -1,0 +1,175 @@
+h3 {
+  font-size: clamp(1.3rem, 1.1500rem + 0.6667vw, 1.5rem);
+}
+.Body {
+  background-color: rgb(34, 40, 49);
+  padding: 30px;
+  color: rgb(238, 238, 238);
+  display: grid;
+  border-radius: 0px 0px 15px 15px;
+  margin-bottom: 10px;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+
+.Title h2 {
+  font-size: clamp(1.5rem, 1.125rem + 1.6667vw, 2rem);
+  text-align: center;
+  line-height: 1em;
+}
+
+.AboutMe p {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.RightSection {
+}
+
+.Title {
+}
+
+.Title h2 {
+  text-align: center;
+}
+
+.ContactMe {
+}
+
+.ContactMe ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+}
+
+.ContactMe h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ContactMe ul > li {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.ContactMe h3 + ul > li > * {
+  display: inline-block;
+  align-items: center;
+}
+
+.ContactMe h3 + ul > li > h5 > a {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+  transition: color 500ms;
+}
+
+.ContactMe h3 + ul > li > h5 > a:hover,
+.ContactMe h3 + ul > li > h5 > a:active {
+  color: rgb(214, 90, 49);
+}
+
+.ContactMe h3 + ul > li > h5 {
+  transition: transform 500ms;
+  font-size: clamp(0.75rem, 0.6750rem + 0.3333vw, 0.85rem);
+}
+
+.ContactMe h3 + ul > li > h5:hover,
+.ContactMe h3 + ul > li > h5:active {
+  transform: scale(1.05);
+}
+
+.ContactMe h3 + ul > li > img {
+  width: 15px;
+  filter: invert(44%) sepia(39%) saturate(1720%) hue-rotate(339deg) brightness(89%) contrast(88%);
+}
+
+.AboutMe {
+}
+
+.AboutMe h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.AboutMe p {
+  line-height: 1.7em;
+  padding: 0 10px;
+}
+
+.SkillsList ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.SkillsList li {
+  text-align: center;
+}
+
+.SkillsList h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .Body {
+    display: grid;
+    grid-template-columns: 2.5fr 0.45fr;
+    row-gap: 50px;
+  }
+  .RightSection {
+    display: grid;
+    padding-left: 10px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .Title {
+    grid-column: 1 / 3;
+  }
+  .AboutMe h3 {
+    text-align: start;
+  }
+  .AboutMe {
+    grid-column: 1 / 2;
+    border-right: 3px solid rgb(214, 90, 49);
+    padding-right: 40px;
+    margin-bottom: 0px;
+  }
+  .AboutMe p {
+    text-align: justify;
+  }
+  .ContactMe {
+    margin-bottom: 25px;
+  }
+  .ContactMe ul {
+    display: inline-block;
+  }
+
+  .ContactMe ul > li {
+    margin-bottom: 18px;
+    text-align: start;
+  }
+
+  .ContactMe h3 {
+    margin-bottom: 10px;
+    text-align: start;
+  }
+
+  .SkillsList {
+    grid-column: 1 / 3;
+    margin-bottom: 30px;
+  }
+
+  .SkillsList h3 {
+    text-align: start;
+  }
+}
+
+@media (max-width: 447px) {
+  .Body {
+    padding: 10px 15px;
+  }
+}

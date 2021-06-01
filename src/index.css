@@ -1,13 +1,30 @@
-body {
+input, button, submit { border:none; } 
+ 
+ button,
+ [type="button"],
+ [type="reset"],
+ [type="submit"] {
+   -webkit-appearance: button;
+ }
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Comfortaa", cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: rgb(238, 75, 55);
+  background: no-repeat
+    linear-gradient(
+      306deg,
+      rgba(238, 75, 55, 1) 38%,
+      rgba(255, 226, 112, 1) 100%
+    );
+}
+
+
+img {
+  width: 100%;
 }
