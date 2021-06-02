@@ -40,15 +40,15 @@ export default function ProjectList() {
       slides: [
         {
           slideImage: CSSMockup2,
-          slideLink: "https://github.com/lukevaka/css-practice-03",
+          slideLink: "https://github.com/lrvaka/css-practice-03",
         },
         {
           slideImage: CSSMockup0,
-          slideLink: "https://github.com/lukevaka/css-practice-02",
+          slideLink: "https://github.com/lrvaka/css-practice-02",
         },
         {
           slideImage: CSSMockup1,
-          slideLink: "https://github.com/lukevaka/css-practice-01",
+          slideLink: "https://github.com/lrvaka/css-practice-01",
         },
       ],
       id: 2,

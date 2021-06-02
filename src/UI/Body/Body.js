@@ -67,7 +67,7 @@ export default function Body() {
               <img src={EmailIcon} alt="email me" />
               <h5>
                 <a
-                  href="mailto:lukevakasisikakala@gmail.com"
+                  href="mailto:lrvaka@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -91,7 +91,7 @@ export default function Body() {
               <img src={GitHubIcon} alt="GitHub Profile" />
               <h5>
                 <a
-                  href="https://github.com/lukevaka"
+                  href="https://github.com/lrvaka"
                   target="_blank"
                   rel="noreferrer"
                 >
