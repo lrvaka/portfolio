@@ -14,6 +14,8 @@ export default function ProjectList() {
     {
       id: 0,
       projectName: "Weather App",
+      description:
+        "Simple weather application that utilizes OpenWeatherAPI for up-to-date weather forecasting.",
       features: [
         "5-day forecast",
         "Today's Weather",
@@ -21,6 +23,7 @@ export default function ProjectList() {
         "Search by geo-location",
         "Hi-Temp, Low-Temp, feels-like & humidity information",
         "Weather icons & description",
+        "Form validation",
       ],
       stacks: ["React JS", "CSS", "OpenWeatherAPI"],
       demoGif: WeatherAppDemo,
@@ -65,7 +68,7 @@ export default function ProjectList() {
     { projectName: "TheRugbyFeed", id: 4 },
     {
       projectName: "Portfolio",
-    }
+    },
   ];
 
   return (
@@ -78,7 +81,9 @@ export default function ProjectList() {
               key={info.id}
               id={info.id}
               projectName={info.projectName}
+              stacks={info.stacks}
               features={info.features}
+              description={info.description}
               demoGif={info.demoGif}
               slides={info.slides}
             />

@@ -32,6 +32,8 @@ const ModalOverlay = ({
   demoGif,
   enabled,
   slides,
+  description,
+  stacks,
   id,
 }) => {
   return (
@@ -71,21 +73,41 @@ const ModalOverlay = ({
             </div>
           </div>
         )}
-        {features && (
-          <div className={styles.FeatureList}>
-            <h4>Features</h4>
-            <ul>
-              {features.map((item) => {
-                return (
-                  <li>
+        <div className={styles.Information}>
+          {description && (
+            <div className={styles.Description}>
+              <h4>Description</h4>
+              <p>{description}</p>
+            </div>
+          )}
+          {features && (
+            <div className={styles.FeatureList}>
+              <h4>Features</h4>
+              <ul>
+                {features.map((item) => {
+                  return (
+                    <li>
+                      <p>{item}</p>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
+          {stacks && (
+            <div className={styles.Stacks}>
+              <h4>Stacks</h4>
+              <ul>
+                {stacks.map((item) => {
+                  return (<li>
                     <p>{item}</p>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        )}
-        <button />
+                  </li>)
+                })}
+              </ul>
+            </div>
+          )}
+        </div>
+        <button className={styles.FillerButton} />
         {/* Button used to make the modal even, filling the grid column on the right */}
       </div>
     </CSSTransition>
@@ -99,6 +121,8 @@ const ProjectModal = ({
   demoGif,
   enabled,
   slides,
+  description,
+  stacks,
   id,
 }) => {
   return (
@@ -115,6 +139,8 @@ const ProjectModal = ({
           demoGif={demoGif}
           enabled={enabled}
           slides={slides}
+          stacks={stacks}
+          description={description}
           id={id}
           key={id}
         />,

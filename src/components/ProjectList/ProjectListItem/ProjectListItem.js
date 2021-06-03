@@ -8,6 +8,8 @@ export default function ProjectListItem({
   demoGif,
   slides,
   links,
+  description,
+  stacks,
   id
 }) {
   const [showProjectModal, setShowProjectModal] = useState(false);
@@ -27,9 +29,11 @@ export default function ProjectListItem({
           features={features}
           onExit={onExitHandler}
           demoGif={demoGif}
+          stacks={stacks}
           slides={slides}
           links={links}
           enabled={showProjectModal}
+          description={description}
           id={id}
         />
       <div
