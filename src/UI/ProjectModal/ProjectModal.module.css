@@ -30,27 +30,9 @@
 }
 
 .Modal > h3 {
-  font-size: clamp(1rem, 0.8875rem + 0.5vw, 1.15rem);
+  font-size: clamp(1rem, 0.4375rem + 2.5000vw, 1.75rem);
   grid-column-start: 2;
   grid-column-end: 3;
-}
-
-.FeatureList {
-}
-
-.FeatureList > h4 {
-  font-size: clamp(0.9rem, 0.825rem + 0.3333vw, 1rem);
-}
-
-.FeatureList > ul {
-}
-
-.FeatureList > ul > li > p {
-  font-size: clamp(0.7rem, 0.55rem + 0.6667vw, 0.9rem);
-}
-
-.Stacks > ul > li > p {
-  font-size: clamp(0.7rem, 0.55rem + 0.6667vw, 0.9rem);
 }
 
 .Modal h3 + img {
@@ -89,20 +71,42 @@
     brightness(113%) contrast(87%);
 }
 
+.FeatureList > h4 {
+  font-size: clamp(0.9rem, 0.6137rem + 1.2214vw, 1.2rem);
+  margin-bottom: clamp(0.1rem, -0.0908rem + 0.8142vw, 0.3rem);
+}
+
+.FeatureList > ul > li > p {
+  font-size: clamp(0.7rem, 0.55rem + 0.6667vw, 0.9rem);
+}
+
+.Stacks > h4 {
+  font-size: clamp(0.9rem, 0.6137rem + 1.2214vw, 1.2rem);
+  margin-bottom: clamp(0.1rem, -0.0908rem + 0.8142vw, 0.3rem);
+}
+
+.Stacks > ul > li > p {
+  font-size: clamp(0.7rem, 0.55rem + 0.6667vw, 0.9rem);
+}
+
 .Information {
   display: grid;
-  gap: 20px;
+  gap: 10px;
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 4;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-.Description > h4 {
-  font-size: clamp(0.9rem, 0.825rem + 0.3333vw, 1rem);
+.Description {
+  grid-column: 2;
+  grid-row: 3;
+  line-height: clamp(1.5rem, 1.2137rem + 1.2214vw, 1.8rem);
+  border-bottom: 3px solid rgb(214, 90, 49);
 }
 
 .Description > p {
-  font-size: clamp(0.7rem, 0.55rem + 0.6667vw, 0.9rem);
+  font-size: clamp(0.7rem, 0.2229rem + 2.0356vw, 1.2rem);
+  text-align: center;
 }
 
 .SlidesWrapper {
@@ -155,3 +159,45 @@
   transform: scale(1.02);
   -webkit-transform: scale(1.02);
 }
+
+.Links {
+  grid-column: 2;
+  grid-row: 4;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Links div{
+ display: flex;
+}
+
+.Links div > img{
+  width: 22px;
+  filter: invert(44%) sepia(39%) saturate(1720%) hue-rotate(339deg) brightness(89%) contrast(88%);
+ }
+
+ .Links div > img[alt="apps code"]{
+   margin-right: 5px;
+ }
+
+.Links div > h3 > a {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+  transition: color 500ms;
+}
+
+.Links div > h3 > a:hover,
+.Links > h3 > a:active {
+  color: rgb(214, 90, 49);
+}
+
+.Links div > h3{
+  transition: transform 500ms;
+}
+
+
+.Links div > h3:hover,
+.Links div > h3:active {
+  transform: scale(1.05);
+}
+

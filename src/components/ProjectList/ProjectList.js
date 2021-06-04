@@ -15,18 +15,12 @@ export default function ProjectList() {
       id: 0,
       projectName: "Weather App",
       description:
-        "Simple weather application that utilizes OpenWeatherAPI for up-to-date weather forecasting.",
-      features: [
-        "5-day forecast",
-        "Today's Weather",
-        "Search by city & country",
-        "Search by geo-location",
-        "Hi-Temp, Low-Temp, feels-like & humidity information",
-        "Weather icons & description",
-        "Form validation",
-      ],
-      stacks: ["React JS", "CSS", "OpenWeatherAPI"],
+        "Weather application that utilizes OpenWeatherAPI for up-to-date weather forecasting. Key features include, search by city & country, search by geo-location, and more!",
       demoGif: WeatherAppDemo,
+      links: {
+        demo: "https://vibrant-hodgkin-b9cad9.netlify.app/",
+        code: "https://github.com/lrvaka/weather-app-v2",
+      },
     },
     {
       projectName: "International Rugby Competition Standings",
@@ -84,6 +78,7 @@ export default function ProjectList() {
               stacks={info.stacks}
               features={info.features}
               description={info.description}
+              links={info.links}
               demoGif={info.demoGif}
               slides={info.slides}
             />

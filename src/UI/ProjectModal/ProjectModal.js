@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import "aos/dist/aos.css";
 import styles from "./ProjectModal.module.css";
 import ExitIcon from "../../assets/ExitIcon.svg";
+import PlayIcon from "../../assets/PlayIcon.svg";
+import CodeIcon from "../../assets/CodeIcon.svg";
 import transitions from "./ModalTransitions.module.css";
 import { CSSTransition } from "react-transition-group";
 
@@ -34,6 +36,7 @@ const ModalOverlay = ({
   slides,
   description,
   stacks,
+  links,
   id,
 }) => {
   return (
@@ -73,13 +76,12 @@ const ModalOverlay = ({
             </div>
           </div>
         )}
+        {description && (
+          <div className={styles.Description}>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;{description}</p>
+          </div>
+        )}
         <div className={styles.Information}>
-          {description && (
-            <div className={styles.Description}>
-              <h4>Description</h4>
-              <p>{description}</p>
-            </div>
-          )}
           {features && (
             <div className={styles.FeatureList}>
               <h4>Features</h4>
@@ -99,12 +101,36 @@ const ModalOverlay = ({
               <h4>Stacks</h4>
               <ul>
                 {stacks.map((item) => {
-                  return (<li>
-                    <p>{item}</p>
-                  </li>)
+                  return (
+                    <li>
+                      <p>{item}</p>
+                    </li>
+                  );
                 })}
               </ul>
             </div>
+          )}
+        </div>
+        <div className={styles.Links}>
+          {links && (
+            <React.Fragment>
+              <div>
+              <img src={PlayIcon} alt="demo the app"/>
+                <h3>
+                  <a href={links.demo} target="_blank" rel="noreferrer">
+                    Demo
+                  </a>
+                </h3>
+              </div>
+              <div>
+              <img src={CodeIcon} alt="apps code"/>
+                <h3>
+                  <a href={links.code} target="_blank" rel="noreferrer">
+                    Code
+                  </a>
+                </h3>
+              </div>
+            </React.Fragment>
           )}
         </div>
         <button className={styles.FillerButton} />
@@ -123,6 +149,7 @@ const ProjectModal = ({
   slides,
   description,
   stacks,
+  links,
   id,
 }) => {
   return (
@@ -140,6 +167,7 @@ const ProjectModal = ({
           enabled={enabled}
           slides={slides}
           stacks={stacks}
+          links={links}
           description={description}
           id={id}
           key={id}
