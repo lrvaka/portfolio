@@ -172,7 +172,7 @@
 }
 
 .Links div > img{
-  width: 22px;
+  width: clamp(1rem, 0.4375rem + 2.5000vw, 1.75rem);
   filter: invert(44%) sepia(39%) saturate(1720%) hue-rotate(339deg) brightness(89%) contrast(88%);
  }
 
