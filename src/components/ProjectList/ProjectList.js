@@ -18,7 +18,7 @@ export default function ProjectList() {
         "Weather application that utilizes OpenWeatherAPI for up-to-date weather forecasting. Key features include, search by city & country, search by geo-location, and more!",
       demoGif: WeatherAppDemo,
       links: {
-        demo: "https://vibrant-hodgkin-b9cad9.netlify.app/",
+        demo: "https://weather-forecast-app679.netlify.app/",
         code: "https://github.com/lrvaka/weather-app-v2",
       },
     },
@@ -28,7 +28,7 @@ export default function ProjectList() {
       description:
         "App that allows you to see all up-to-date rugby standings from all the popular competitions around the world. Team icons, records, points, and point differentials all included",
       links: {
-        demo: "https://trusting-lewin-5a23e3.netlify.app/",
+        demo: "https://rugby-feed-standings.netlify.app/",
         code: "https://github.com/lrvaka/rugbyfeed.io"
       },
       id: 1,
