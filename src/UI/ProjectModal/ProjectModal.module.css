@@ -163,12 +163,13 @@
 .Links {
   grid-column: 2;
   grid-row: 4;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
   justify-content: space-around;
 }
 
-.Links div{
- display: flex;
+.Links div > *{
+ display: inline-block
 }
 
 .Links div > img{
