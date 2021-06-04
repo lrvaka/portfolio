@@ -22,7 +22,7 @@ export default function Body() {
           &nbsp;&nbsp;&nbsp;&nbsp; Hello, my name is Luke Vakasisikakala. I'm a
           driven, detail-oriented software developer specializing in web
           development and content creation. I graduated from Saint Bonaventure University
-          in December 2020 with a B.S. in Computer Science, where I learned
+          in December 2020 with a B.Sc. in Computer Science, where I learned
           skills and concepts ranging from Algorithms & Data Structure, Database
           Management Systems, to Software Development and Wireless Sensor
           Networks. As of recent I've focused my attention on web development
