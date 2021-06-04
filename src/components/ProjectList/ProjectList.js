@@ -25,11 +25,12 @@ export default function ProjectList() {
     {
       projectName: "International Rugby Competition Standings",
       demoGif: RugbyStandingsDemo,
-      features: [
-        "Dropdown menu selection",
-        "All popular international rugby comps",
-        "Tables separated by conference if available",
-      ],
+      description:
+        "App that allows you to see all up-to-date rugby standings from all the popular competitions around the world. Team icons, records, points, and point differentials all included",
+      links: {
+        demo: "https://trusting-lewin-5a23e3.netlify.app/",
+        code: "https://github.com/lrvaka/rugbyfeed.io"
+      },
       id: 1,
     },
     {
