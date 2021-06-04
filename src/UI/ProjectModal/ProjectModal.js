@@ -5,6 +5,9 @@ import styles from "./ProjectModal.module.css";
 import ExitIcon from "../../assets/ExitIcon.svg";
 import PlayIcon from "../../assets/PlayIcon.svg";
 import CodeIcon from "../../assets/CodeIcon.svg";
+import FacebookIcon from "../../assets/FacebookIcon.svg";
+import YoutubeIcon from "../../assets/YoutubeIcon.svg";
+import DriveIcon from "../../assets/DriveIcon.svg";
 import transitions from "./ModalTransitions.module.css";
 import { CSSTransition } from "react-transition-group";
 
@@ -37,6 +40,7 @@ const ModalOverlay = ({
   description,
   stacks,
   links,
+  screenshot,
   id,
 }) => {
   return (
@@ -76,6 +80,7 @@ const ModalOverlay = ({
             </div>
           </div>
         )}
+        {screenshot && <img src={screenshot} alt="Loading..." />}
         {description && (
           <div className={styles.Description}>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;{description}</p>
@@ -114,22 +119,56 @@ const ModalOverlay = ({
         <div className={styles.Links}>
           {links && (
             <React.Fragment>
-              <div>
-              <img src={PlayIcon} alt="demo the app"/>
-                <h3>
-                  <a href={links.demo} target="_blank" rel="noreferrer">
-                    Demo
-                  </a>
-                </h3>
-              </div>
-              <div>
-              <img src={CodeIcon} alt="apps code"/>
-                <h3>
-                  <a href={links.code} target="_blank" rel="noreferrer">
-                    Code
-                  </a>
-                </h3>
-              </div>
+              {links.demo && (
+                <div>
+                  <img src={PlayIcon} alt="demo the app" />
+                  <h3>
+                    <a href={links.demo} target="_blank" rel="noreferrer">
+                      Demo
+                    </a>
+                  </h3>
+                </div>
+              )}
+              {links.code && (
+                <div>
+                  <img src={CodeIcon} alt="apps code" />
+                  <h3>
+                    <a href={links.code} target="_blank" rel="noreferrer">
+                      Code
+                    </a>
+                  </h3>
+                </div>
+              )}
+              {links.facebook && (
+                <div>
+                  <img src={FacebookIcon} alt="facebook link" />
+                  <h3>
+                    <a href={links.facebook} target="_blank" rel="noreferrer">
+                      Facebook
+                    </a>
+                  </h3>
+                </div>
+              )}
+              {links.youtube && (
+                <div>
+                  <img src={YoutubeIcon} alt="youtube link" />
+                  <h3>
+                    <a href={links.youtube} target="_blank" rel="noreferrer">
+                      Youtube
+                    </a>
+                  </h3>
+                </div>
+              )}
+              {links.drive && (
+                <div>
+                  <img src={DriveIcon} alt="drive link" />
+                  <h3>
+                    <a href={links.drive} target="_blank" rel="noreferrer">
+                      Google Drive
+                    </a>
+                  </h3>
+                </div>
+              )}
             </React.Fragment>
           )}
         </div>
@@ -150,6 +189,7 @@ const ProjectModal = ({
   description,
   stacks,
   links,
+  screenshot,
   id,
 }) => {
   return (
@@ -169,6 +209,7 @@ const ProjectModal = ({
           stacks={stacks}
           links={links}
           description={description}
+          screenshot={screenshot}
           id={id}
           key={id}
         />,

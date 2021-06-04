@@ -10,6 +10,7 @@ export default function ProjectListItem({
   links,
   description,
   stacks,
+  screenshot,
   id
 }) {
   const [showProjectModal, setShowProjectModal] = useState(false);
@@ -32,6 +33,7 @@ export default function ProjectListItem({
           stacks={stacks}
           slides={slides}
           links={links}
+          screenshot={screenshot}
           enabled={showProjectModal}
           description={description}
           id={id}

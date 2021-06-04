@@ -52,10 +52,28 @@ export default function Body() {
             <h5>HTML</h5>
           </li>
           <li>
+            <h5>NodeJS</h5>
+          </li>
+          <li>
             <h5>Git</h5>
           </li>
           <li>
             <h5>Photoshop</h5>
+          </li>
+          <li>
+            <h5>Windows/MacOS troubleshooting</h5>
+          </li>
+          <li>
+            <h5>PC Building</h5>
+          </li>
+          <li>
+            <h5>SQL</h5>
+          </li>
+          <li>
+            <h5>Java</h5>
+          </li>
+          <li>
+            <h5>Agile</h5>
           </li>
         </ul>
       </div>
