@@ -121,7 +121,7 @@ export default function Body() {
               <img src={ResumeIcon} alt="My resume" />
               <h5>
                 <a
-                  href="https://drive.google.com/file/d/1UO2dsvmj1d_1ayjjmROO2OtvKhqb-Hys/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1y8L_ok5Py6DQTtNTLJsk0DJ44yEjWjKp/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
