@@ -97,7 +97,7 @@ export default function Body() {
               <img src={LinkedInIcon} alt="LinkedIn Profile" />
               <h5>
                 <a
-                  href="www.linkedin.com/in/lrvaka"
+                  href="https://www.linkedin.com/in/lrvaka/"
                   target="_blank"
                   rel="noreferrer"
                 >
