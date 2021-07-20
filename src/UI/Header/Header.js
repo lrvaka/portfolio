@@ -32,8 +32,8 @@ export default function Header() {
       <img data-aos="fade-up" data-aos-delay="1250" src={blob1} alt="blob1" />
       <img data-aos="fade-up" data-aos-delay="1500" src={blob2} alt="blob2" />
       <h2 data-aos="fade-up" data-aos-delay="3000">
-        Recent computer science B.Sc. graduate, software developer specializing
-        in web development and content creation
+        Computer science B.Sc. graduate, professional learner, software
+        developer, specializing in web development and content creation
       </h2>
       <CSSTransition
         in={visible}
