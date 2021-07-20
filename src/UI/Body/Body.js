@@ -21,14 +21,14 @@ export default function Body() {
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp; Hello, my name is Luke Vakasisikakala. I'm a
           driven, detail-oriented software developer specializing in web
-          development and content creation. I graduated from Saint Bonaventure University
-          in December 2020 with a B.Sc. in Computer Science, where I learned
-          skills and concepts ranging from Algorithms & Data Structure, Database
-          Management Systems, to Software Development and Wireless Sensor
-          Networks. As of recent I've focused my attention on web development
-          and content creation. I specialize in React JS & CSS which allows me
-          to create simple & powerful web experiences. I worked as a web
-          designer for a small company, Rakavii, where I revamped their web
+          development and content creation. I graduated from Saint Bonaventure
+          University in December 2020 with a B.Sc. in Computer Science, where I
+          learned skills and concepts ranging from Algorithms & Data Structure,
+          Database Management Systems, to Software Development and Wireless
+          Sensor Networks. As of recent I've focused my attention on web
+          development and content creation. I specialize in React JS & CSS which
+          allows me to create simple & powerful web experiences. I worked as a
+          web designer for a small company, Rakavii, where I revamped their web
           presence and e-commerce functionalities. During my free time, I create
           projects and learn new technologies. Although I enjoy software
           development, I more so enjoy creating & designing experiences that
@@ -97,7 +97,7 @@ export default function Body() {
               <img src={LinkedInIcon} alt="LinkedIn Profile" />
               <h5>
                 <a
-                  href="https://www.linkedin.com/in/luke-vakasisikakala-329a6b162/"
+                  href="www.linkedin.com/in/lrvaka"
                   target="_blank"
                   rel="noreferrer"
                 >
