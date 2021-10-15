@@ -29,8 +29,6 @@
   overflow-x: scroll;
   max-width: 80vw;
 }
-/* Fixes overflow non-padding issue on the right */
-
 
 @media (min-width: 768px) {
   .ProjectList {
