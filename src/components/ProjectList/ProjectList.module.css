@@ -30,12 +30,7 @@
   max-width: 80vw;
 }
 /* Fixes overflow non-padding issue on the right */
-.ProjectList ul:after {
-  content: "";
-  display: block;
-  width: 0.01px;
-  height: 100%;
-}
+
 
 @media (min-width: 768px) {
   .ProjectList {
