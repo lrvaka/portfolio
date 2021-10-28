@@ -10,6 +10,7 @@ import CSSMockup2 from "../../assets/CSSMockup2.png";
 import PS0 from "../../assets/PS0.png";
 import PS1 from "../../assets/PS1.png";
 import PS2 from "../../assets/PS2.png";
+import PS3 from "../../assets/PS3.png";
 import WSNShot from "../../assets/WSNShot.png";
 import SoftwareDevShot from "../../assets/SoftwareDevShot.png";
 
@@ -61,6 +62,7 @@ export default function ProjectList() {
         { slideImage: PS0, slideLink: "https://i.imgur.com/laUjmzq.png" },
         { slideImage: PS1, slideLink: "https://i.imgur.com/f81n4W8.png" },
         { slideImage: PS2, slideLink: "https://i.imgur.com/SInlWkp.png" },
+        { slideImage: PS3, slideLink: "https://i.imgur.com/xOUpnva.png" },
       ],
       id: 3,
     },
@@ -81,7 +83,8 @@ export default function ProjectList() {
         "Assisted in revamping the website for relaunch, implemented new design ideas, built new sections, ensured overall design flow. Completed other tasks outside work title. Managed the e-commerce functionality, created multitude of  posters for social media, created new clothing designs, and more.",
       links: {
         demo: "https://www.rakavii.com/",
-        drive: "https://drive.google.com/file/d/1KQyuxhOugOlOBGyTdzjZshn_FelW5Vmr/view?usp=sharing"
+        drive:
+          "https://drive.google.com/file/d/1KQyuxhOugOlOBGyTdzjZshn_FelW5Vmr/view?usp=sharing",
       },
     },
     {
