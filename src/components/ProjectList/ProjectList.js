@@ -59,10 +59,10 @@ export default function ProjectList() {
     {
       projectName: "Photoshop Work",
       slides: [
+        { slideImage: PS3, slideLink: "https://i.imgur.com/xOUpnva.png" },
         { slideImage: PS0, slideLink: "https://i.imgur.com/laUjmzq.png" },
         { slideImage: PS1, slideLink: "https://i.imgur.com/f81n4W8.png" },
         { slideImage: PS2, slideLink: "https://i.imgur.com/SInlWkp.png" },
-        { slideImage: PS3, slideLink: "https://i.imgur.com/xOUpnva.png" },
       ],
       id: 3,
     },
