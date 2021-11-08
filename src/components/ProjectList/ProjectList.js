@@ -7,6 +7,7 @@ import RakaviiDemo from "../../assets/RakaviiDemo.gif";
 import CSSMockup0 from "../../assets/CSSMockup0.png";
 import CSSMockup1 from "../../assets/CSSMockup1.png";
 import CSSMockup2 from "../../assets/CSSMockup2.png";
+import CSSMockup3 from "../../assets/CSSMockup3.png";
 import PS0 from "../../assets/PS0.png";
 import PS1 from "../../assets/PS1.png";
 import PS2 from "../../assets/PS2.png";
@@ -41,6 +42,10 @@ export default function ProjectList() {
     {
       projectName: "CSS Practice Mockups",
       slides: [
+        {
+          slideImage: CSSMockup3,
+          slideLink: "https://github.com/lrvaka/price-grid-component",
+        },
         {
           slideImage: CSSMockup2,
           slideLink: "https://github.com/lrvaka/css-practice-03",
